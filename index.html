@@ -38,6 +38,16 @@
             color: white;
             font-weight: bold;
         }
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -85,31 +95,11 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-green-50/50 min-h-screen flex items-center justify-center pt-24 pb-12">
-        <div class="text-center px-4 max-w-4xl mx-auto">
-            <div class="flex items-center justify-center space-x-4 md:space-x-8 mb-8 text-green-600">
-                <!-- Icon 1: Agriculture -->
-                <div class="p-4 bg-white/60 rounded-full shadow-md">
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.04 15.04 0 01-7.5 0C4.181 20.045 2.25 18.062 2.25 15.75c0-1.848 1.13-3.527 2.752-4.219l.794-.397a6 6 0 014.396 0l.794.397a4.5 4.5 0 012.248 4.219c0 2.312-1.932 4.295-4.5 4.588z" />
-                    </svg>
-                </div>
-                <!-- Icon 2: Global -->
-                 <div class="p-4 bg-white/60 rounded-full shadow-md">
-                    <svg class="w-8 h-8 md:w-10 md:h-10 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-                    </svg>
-                </div>
-                 <!-- Icon 3: Community -->
-                 <div class="p-4 bg-white/60 rounded-full shadow-md">
-                     <svg class="w-8 h-8 md:w-10 md:h-10 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.228a4.5 4.5 0 00-1.897 1.13l-2.28 2.28a1.5 1.5 0 001.06 2.563h9.72a1.5 1.5 0 001.06-2.563l-2.28-2.28a4.5 4.5 0 00-1.897-1.131m-7.5-2.228a4.5 4.5 0 00-1.897-1.13l-2.28-2.28a1.5 1.5 0 00-1.06 2.563h9.72a1.5 1.5 0 001.06-2.563l-2.28-2.28a4.5 4.5 0 00-1.897 1.13m-7.5-2.228l-2.28 2.28a1.5 1.5 0 001.06 2.563h9.72a1.5 1.5 0 001.06-2.563l-2.28-2.28m0 0a4.5 4.5 0 00-1.897-1.13m-7.5 2.228a4.5 4.5 0 00-1.897 1.13" />
-                    </svg>
-                </div>
-            </div>
-            <h1 class="playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-green-900 drop-shadow-sm" data-lang-en="From Gambela's Fertile Lands to Your Table" data-lang-am="ከጋምቤላ ለም መሬት፣ ወደ ጠረጴዛዎ">From Gambela's Fertile Lands to Your Table</h1>
-            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 font-light text-gray-700" data-lang-en="Cultivating premium crops and livestock in Gambela, connecting the heart of Africa's agricultural bounty to the world." data-lang-am="በጋምቤላ ጥራት ያላቸውን ሰብሎች እና እንስሳት በማልማት፣ የአፍሪካን የግብርና ልብ ከዓለም ጋር እናገናኛለን።">Cultivating premium crops and livestock in Gambela, connecting the heart of Africa's agricultural bounty to the world.</p>
-            <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105" data-lang-en="Explore Our Products" data-lang-am="ምርቶቻችንን ያስሱ">
+    <section class="min-h-screen flex items-center justify-center relative bg-cover bg-center hero-overlay" style="background-image: url('images/hero.jpg');">
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+            <h1 class="playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-4 drop-shadow-lg" data-lang-en="From Gambela's Fertile Lands to Your Table" data-lang-am="ከጋምቤላ ለም መሬት፣ ወደ ጠረጴዛዎ">From Gambela's Fertile Lands to Your Table</h1>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 font-light drop-shadow-md" data-lang-en="Cultivating premium crops and livestock in Gambela, connecting the heart of Africa's agricultural bounty to the world." data-lang-am="በጋምቤላ ጥራት ያላቸውን ሰብሎች እና እንስሳት በማልማት፣ የአፍሪካን የግብርና ልብ ከዓለም ጋር እናገናኛለን።">Cultivating premium crops and livestock in Gambela, connecting the heart of Africa's agricultural bounty to the world.</p>
+            <a href="#products" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg" data-lang-en="Explore Our Products" data-lang-am="ምርቶቻችንን ያስሱ">
                 Explore Our Products
             </a>
         </div>
@@ -252,26 +242,6 @@
                             </path>
                         </svg>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="section-fade-in">
-            <div class="text-center mb-12">
-                <h2 class="playfair text-3xl md:text-4xl font-bold text-green-800 mb-4" data-lang-en="What Our Partners Say" data-lang-am="አጋሮቻችን ምን ይላሉ">What Our Partners Say</h2>
-                 <p class="max-w-2xl mx-auto text-gray-600" data-lang-en="We build lasting relationships based on trust, quality, and reliability." data-lang-am="በመተማመን፣ በጥራት እና በአስተማማኝነት ላይ የተመሰረተ ዘላቂ ግንኙነቶችን እንገነባለን።">We build lasting relationships based on trust, quality, and reliability.</p>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <p class="text-gray-600 italic mb-4" data-lang-en='"The quality of the sesame seeds from Menelik & Family Farming is unmatched. Our customers in Minneapolis have noticed the difference, and it has elevated our products significantly. Their professionalism and reliable delivery make them a top-tier partner."' data-lang-am='"ከምኒልክ እና ቤተሰቡ እርሻ የሚገኘው የሰሊጥ ጥራት ወደር የለሽ ነው። በሚኒያፖሊስ ያሉ ደንበኞቻችን ልዩነቱን አስተውለዋል፣ እናም ምርቶቻችንን በእጅጉ ከፍ አድርጎታል። የእነሱ ሙያዊ ብቃት እና አስተማማኝ አቅርቦት ከፍተኛ ደረጃ ያለው አጋር ያደርጋቸዋል።"'> "The quality of the sesame seeds from Menelik & Family Farming is unmatched. Our customers in Minneapolis have noticed the difference, and it has elevated our products significantly. Their professionalism and reliable delivery make them a top-tier partner."</p>
-                    <div class="font-bold text-green-800">- Sarah Johnson</div>
-                    <div class="text-sm text-gray-500">Owner, Lake State Foods, MN</div>
-                </div>
-                 <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <p class="text-gray-600 italic mb-4" data-lang-en='"As a distributor of specialty ingredients, we are always searching for authentic, high-quality products. The raw honey and red pepper we source from Menelik & Family Farming are simply exceptional. Truly a taste of Gambela."' data-lang-am='"እንደ ልዩ ንጥረ ነገሮች አከፋፋይ፣ ሁልጊዜም ትክክለኛ እና ከፍተኛ ጥራት ያላቸውን ምርቶች እንፈልጋለን። ከምኒልክ እና ቤተሰቡ እርሻ የምናገኘው ጥሬ ማር እና ቀይ በርበሬ በቀላሉ ልዩ ናቸው። በእውነት የጋምቤላ ጣዕም አላቸው።"'>"As a distributor of specialty ingredients, we are always searching for authentic, high-quality products. The raw honey and red pepper we source from Menelik & Family Farming are simply exceptional. Truly a taste of Gambela."</p>
-                    <div class="font-bold text-green-800">- Michael Chen</div>
-                    <div class="text-sm text-gray-500">Lead Purchaser, Global Provisions Inc.</div>
                 </div>
             </div>
         </section>

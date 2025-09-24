@@ -56,13 +56,13 @@
     <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-xl md:text-2xl font-bold text-green-800" data-lang-en="Menelik & Family Farming Co." data-lang-am="ሚኒሊክ እና ቤተሰቡ እርሻ ልማት ማህበር">
+                <a href="#" class="text-xl md:text-2xl font-bold text-green-800" data-lang-en="Menelik & Family Farming" data-lang-am="የምኒልክ እና ቤተሰቡ እርሻ">
                     Menelik & Family Farming
                 </a>
                 <div class="flex items-center">
                     <nav class="hidden md:flex space-x-8" id="nav-menu">
                         <a href="#about" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="About Us" data-lang-am="ስለ እኛ">About Us</a>
-                        <a href="#commitment" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="Our Commitment" data-lang-am="ቁርጠኝነታችን">Our Commitment</a>
+                        <a href="#team" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="Our Team" data-lang-am="ቡድናችን">Our Team</a>
                         <a href="#products" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="Products" data-lang-am="ምርቶቻችን">Products</a>
                         <a href="#gallery" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="Gallery" data-lang-am="ማዕከለ-ሥዕላት">Gallery</a>
                         <a href="#global" class="text-gray-600 hover:text-green-700 transition duration-300" data-lang-en="Global Reach" data-lang-am="ዓለም አቀፍ ተደራሽነት">Global Reach</a>
@@ -70,7 +70,7 @@
                     </nav>
                      <div class="flex items-center space-x-2 ml-4 border-l pl-4 border-gray-300">
                         <button id="lang-en" class="lang-btn active">EN</button>
-                        <button id="lang-am" class="lang-btn">አማ</button>
+                        <button id="lang-am" class="lang-btn">AM</button>
                     </div>
                     <div class="md:hidden ml-4">
                         <!-- Mobile Menu Button -->
@@ -85,7 +85,7 @@
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden py-4">
                 <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="About Us" data-lang-am="ስለ እኛ">About Us</a>
-                <a href="#commitment" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="Our Commitment" data-lang-am="ቁርጠኝነታችን">Our Commitment</a>
+                <a href="#team" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="Our Team" data-lang-am="ቡድናችን">Our Team</a>
                 <a href="#products" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="Products" data-lang-am="ምርቶቻችን">Products</a>
                 <a href="#gallery" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="Gallery" data-lang-am="ማዕከለ-ሥዕላት">Gallery</a>
                 <a href="#global" class="block py-2 px-4 text-sm text-gray-700 hover:bg-green-50" data-lang-en="Global Reach" data-lang-am="ዓለም አቀፍ ተደራሽነት">Global Reach</a>
@@ -126,35 +126,51 @@
                 </div>
             </div>
         </section>
-
-        <!-- Our Commitment Section -->
-        <section id="commitment" class="section-fade-in text-center">
-            <h2 class="playfair text-3xl md:text-4xl font-bold text-green-800 mb-4" data-lang-en="Our Commitment" data-lang-am="ቁርጠኝነታችን">Our Commitment</h2>
-            <p class="max-w-2xl mx-auto text-gray-600 mb-12" data-lang-en="We are founded on principles that honor our land, our people, and our partners." data-lang-am="መሬታችንን፣ ህዝባችንን እና አጋሮቻችንን በሚያከብሩ መርሆዎች ላይ የተመሰረትን ነን።">We are founded on principles that honor our land, our people, and our partners.</p>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Sustainability -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
+        
+        <!-- Our Team Section -->
+        <section id="team" class="section-fade-in text-center">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-green-800 mb-4" data-lang-en="Meet Our Team" data-lang-am="ቡድናችንን ይተዋወቁ">Meet Our Team</h2>
+            <p class="max-w-2xl mx-auto text-gray-600 mb-12" data-lang-en="The leadership guiding our vision." data-lang-am="ራዕያችንን የሚመራ አመራር።">The leadership guiding our vision.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
                     <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
-                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0-1V4m0 2.01V5M12 20v-1m0-1v-1m0-1v-1m0-1v-1m0-1V9m0-1V7m0-1V4m0 16a8 8 0 100-16 8 8 0 000 16z"></path></svg>
+                        <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Sustainability" data-lang-am="ቀጣይነት">Sustainability</h3>
-                    <p class="text-gray-600" data-lang-en="We practice responsible agriculture that respects the environment, conserves water, and promotes biodiversity to ensure the long-term health of our land." data-lang-am="አካባቢን የሚያከብር፣ ውሃ የሚቆጥብ እና የመሬታችንን የረጅም ጊዜ ጤና ለማረጋገጥ የብዝሀ-ህይወትን የሚያበረታታ ኃላፊነት የተሞላበት ግብርና እንለማመዳለን።">We practice responsible agriculture that respects the environment, conserves water, and promotes biodiversity to ensure the long-term health of our land.</p>
+                    <h3 class="font-bold text-xl text-green-800">Menelik Bantiwalu Tilahun</h3>
+                    <p class="text-gray-500" data-lang-en="Director" data-lang-am="ዳይሬክተር">Director</p>
                 </div>
-                <!-- Community Empowerment -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
-                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <!-- Team Member Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                     <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Community" data-lang-am="ማህበረሰብ">Community</h3>
-                    <p class="text-gray-600" data-lang-en="Our success is intertwined with our community. We ensure fair trade practices, provide stable livelihoods, and invest in local development projects." data-lang-am="ስኬታችን ከማህበረሰባችን ጋር የተቆራኘ ነው። ፍትሃዊ የንግድ አሰራርን እናረጋግጣለን፣ የተረጋጋ የኑሮ ሁኔታን እንፈጥራለን፣ እና በአካባቢ ልማት ፕሮጀክቶች ላይ ኢንቨስት እናደርጋለን።">Our success is intertwined with our community. We ensure fair trade practices, provide stable livelihoods, and invest in local development projects.</p>
+                    <h3 class="font-bold text-xl text-green-800">Samuel Assefa Balcha</h3>
+                    <p class="text-gray-500" data-lang-en="Vice Director" data-lang-am="ምክትል ዳይሬክተር">Vice Director</p>
                 </div>
-                <!-- Quality Assurance -->
-                <div class="bg-white p-8 rounded-2xl shadow-lg">
-                    <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
-                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <!-- Team Member Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                     <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
                     </div>
-                    <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Uncompromising Quality" data-lang-am="የማያወላውል ጥራት">Uncompromising Quality</h3>
-                    <p class="text-gray-600" data-lang-en="From seed to shipment, we maintain the highest standards. Our rigorous quality control ensures that every product is fresh, pure, and authentic." data-lang-am="ከዘር እስከ ጭነት ድረስ ከፍተኛውን መስፈርት እንጠብቃለን። ጥብቅ የጥራት ቁጥጥራችን እያንዳንዱ ምርት ትኩስ፣ ንጹህ እና ትክክለኛ መሆኑን ያረጋግጣል።">From seed to shipment, we maintain the highest standards. Our rigorous quality control ensures that every product is fresh, pure, and authentic.</p>
+                    <h3 class="font-bold text-xl text-green-800">Yosef Zenebe Teferi</h3>
+                    <p class="text-gray-500" data-lang-en="Operation Adviser" data-lang-am="የኦፕሬሽን አማካሪ">Operation Adviser</p>
+                </div>
+                <!-- Team Member Card -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                     <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-xl text-green-800">Biniyam Ajaw Odol</h3>
+                    <p class="text-gray-500" data-lang-en="Operations Lead" data-lang-am="የኦፕሬሽን መሪ">Operations Lead</p>
                 </div>
             </div>
         </section>
@@ -163,23 +179,23 @@
         <section id="products" class="section-fade-in">
             <div class="text-center mb-12">
                 <h2 class="playfair text-3xl md:text-4xl font-bold text-green-800 mb-4" data-lang-en="Our Premium Gambela Exports" data-lang-am="የእኛ ዋና የጋምቤላ ምርቶች">Our Premium Gambela Exports</h2>
-                <p class="max-w-2xl mx-auto text-gray-600" data-lang-en="From staple grains to specialty goods, our products are a testament to Gambela's rich soil and ideal climate." data-lang-am="ከዋና ዋና እህሎች እስከ ልዩ ምርቶች ድረስ، ምርቶቻችን የጋምቤላን ለም አፈር እና ምቹ የአየር ንብረት ምስክር ናቸው።">From staple grains to specialty goods, our products are a testament to Gambela's rich soil and ideal climate.</p>
+                <p class="max-w-2xl mx-auto text-gray-600" data-lang-en="From staple grains to specialty goods, our products are a testament to Gambela's rich soil and ideal climate." data-lang-am="ከዋና ዋና እህሎች እስከ ልዩ ምርቶች ድረስ፣ ምርቶቻችን የጋምቤላን ለም አፈር እና ምቹ የአየር ንብረት ምስክር ናቸው።">From staple grains to specialty goods, our products are a testament to Gambela's rich soil and ideal climate.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="images/grain-and-seeds.png" alt="Grains and Seeds" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Grains & Seeds" data-lang-am="እህሎች እና ዘሮች">Grains & Seeds</h3>
-                    <p class="text-gray-600" data-lang-en="Hearty maize, versatile sorghum, and nutritious sesame seeds, cultivated for peak flavor and quality." data-lang-am="ለመብል የሚሆን በቆሎ، ሁለገብ ማሽላ እና ገንቢ ሰሊጥ، ለከፍተኛ ጣዕም እና ጥራት የሚመረቱ።">Hearty maize, versatile sorghum, and nutritious sesame seeds, cultivated for peak flavor and quality.</p>
+                    <p class="text-gray-600" data-lang-en="Hearty maize, versatile sorghum, and nutritious sesame seeds, cultivated for peak flavor and quality." data-lang-am="ለመብል የሚሆን በቆሎ፣ ሁለገብ ማሽላ እና ገንቢ ሰሊጥ፣ ለከፍተኛ ጣዕም እና ጥራት የሚመረቱ።">Hearty maize, versatile sorghum, and nutritious sesame seeds, cultivated for peak flavor and quality.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="images/honey.jpg" alt="Honey and Spices" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Artisanal Goods" data-lang-am="የእደ ጥበብ ውጤቶች">Artisanal Goods</h3>
-                    <p class="text-gray-600" data-lang-en="Pure, raw honey, fiery red pepper, and rich, traditional clarified butter (ghee) for an authentic taste." data-lang-am="ንጹህ، ጥሬ ማር، እሳታማ ቀይ በርበሬ እና የበለጸገ، ባህላዊ የተቀመመ ቅቤ (ንጥር ቅቤ) ለትክክለኛ ጣዕም።">Pure, raw honey, fiery red pepper, and rich, traditional clarified butter (ghee) for an authentic taste.</p>
+                    <p class="text-gray-600" data-lang-en="Pure, raw honey, fiery red pepper, and rich, traditional clarified butter (ghee) for an authentic taste." data-lang-am="ንጹህ፣ ጥሬ ማር፣ እሳታማ ቀይ በርበሬ እና የበለጸገ፣ ባህላዊ የተቀመመ ቅቤ (ንጥር ቅቤ) ለትክክለኛ ጣዕም።">Pure, raw honey, fiery red pepper, and rich, traditional clarified butter (ghee) for an authentic taste.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="images/goats.webp" alt="Goats" class="w-full h-48 object-cover rounded-lg mb-4">
                     <h3 class="font-bold text-xl mb-2 text-green-800" data-lang-en="Livestock" data-lang-am="የእንስሳት እርባታ">Livestock</h3>
-                    <p class="text-gray-600" data-lang-en="Healthy, free-range goats raised with traditional methods, ensuring premium quality meat." data-lang-am="ጤናማ، በግጦሽ ያደጉ ፍየሎች በባህላዊ ዘዴዎች የሚረቡ، ከፍተኛ ጥራት ያለው ስጋን ያረጋግጣሉ።">Healthy, free-range goats raised with traditional methods, ensuring premium quality meat.</p>
+                    <p class="text-gray-600" data-lang-en="Healthy, free-range goats raised with traditional methods, ensuring premium quality meat." data-lang-am="ጤናማ፣ በግጦሽ ያደጉ ፍየሎች በባህላዊ ዘዴዎች የሚረቡ፣ ከፍተኛ ጥራት ያለው ስጋን ያረጋግጣሉ።">Healthy, free-range goats raised with traditional methods, ensuring premium quality meat.</p>
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
                     <img src="images/maize-field.jpg" alt="Palm Trees" class="w-full h-48 object-cover rounded-lg mb-4">
@@ -225,7 +241,7 @@
                         <img class="h-full w-full object-cover shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300" src="images/gallery9.jpg" alt="Freshly harvested produce">
                     </div>
                     <div class="aspect-square rounded-lg overflow-hidden">
-                        <img class="h-full w-full object-cover shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300" src="images/gallergy10.jpg" alt="Menelik & Family Farming team">
+                        <img class="h-full w-full object-cover shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300" src="images/gallery10.jpg" alt="Menelik & Family Farming team">
                     </div>
                 </div>
             </div>
@@ -236,10 +252,10 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="text-left">
                     <h2 class="playfair text-3xl md:text-4xl font-bold text-green-800 mb-6" data-lang-en="Connecting Gambela to the World" data-lang-am="ጋምቤላን ከአለም ጋር ማገናኘት">Connecting Gambela to the World</h2>
-                    <p class="mb-4" data-lang-en="We pride ourselves on our robust and reliable supply chain, ensuring our agricultural products maintain their freshness and quality from our farms in Gambela, Ethiopia to markets across the globe." data-lang-am="ከጋምቤላ، ኢትዮጵያ እርሻዎቻችን እስከ አለም ገበያዎች ድረስ የግብርና ምርቶቻችን ትኩስነታቸውን እና ጥራታቸውን እንዲጠብቁ የሚያደርግ ጠንካራ እና አስተማማኝ የአቅርቦት ሰንሰለት አለን።">
+                    <p class="mb-4" data-lang-en="We pride ourselves on our robust and reliable supply chain, ensuring our agricultural products maintain their freshness and quality from our farms in Gambela, Ethiopia to markets across the globe." data-lang-am="ከጋምቤላ፣ ኢትዮጵያ እርሻዎቻችን እስከ አለም ገበያዎች ድረስ የግብርና ምርቶቻችን ትኩስነታቸውን እና ጥራታቸውን እንዲጠብቁ የሚያደርግ ጠንካራ እና አስተማማኝ የአቅርቦት ሰንሰለት አለን።">
                         We pride ourselves on our robust and reliable supply chain, ensuring our agricultural products maintain their freshness and quality from our farms in Gambela, Ethiopia to markets across the globe.
                     </p>
-                    <p data-lang-en="Our key export hub in Minnesota, USA, serves as a vital link to our North American partners. We manage all logistics to provide a seamless and dependable experience, making the finest Gambelan goods accessible to you." data-lang-am="በአሜሪካ ሚኒሶታ የሚገኘው ዋናው የወጪ ንግድ ማዕከላችን ከሰሜን አሜሪካ አጋሮቻችን ጋር ወሳኝ ግንኙነት ይፈጥራል። እንከን የለሽ እና አስተማማኝ ተሞክሮ ለማቅረብ ሁሉንም የሎጂስቲክስ ስራዎችን እናስተዳድራለን، ይህም ምርጥ የጋምቤላ ምርቶችን ለእርስዎ ተደራሽ ያደርጋል።">
+                    <p data-lang-en="Our key export hub in Minnesota, USA, serves as a vital link to our North American partners. We manage all logistics to provide a seamless and dependable experience, making the finest Gambelan goods accessible to you." data-lang-am="በአሜሪካ ሚኒሶታ የሚገኘው ዋናው የወጪ ንግድ ማዕከላችን ከሰሜን አሜሪካ አጋሮቻችን ጋር ወሳኝ ግንኙነት ይፈጥራል። እንከን የለሽ እና አስተማማኝ ተሞክሮ ለማቅረብ ሁሉንም የሎጂስቲክስ ስራዎችን እናስተዳድራለን፣ ይህም ምርጥ የጋምቤላ ምርቶችን ለእርስዎ ተደራሽ ያደርጋል።">
                         Our key export hub in Minnesota, USA, serves as a vital link to our North American partners. We manage all logistics to provide a seamless and dependable experience, making the finest Gambelan goods accessible to you.
                     </p>
                 </div>
@@ -382,5 +398,4 @@
 
 </body>
 </html>
-
 
